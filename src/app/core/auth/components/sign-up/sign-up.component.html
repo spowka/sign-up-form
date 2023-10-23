@@ -1,12 +1,15 @@
 <div class="container-signup flex-row w-full h-full">
     <div class="content-container-logo">
         <div class="welcome-label flex-col h-full">
-            <h1>Welcome.</h1>
-            <h4>Register</h4>
+            <h1>Welcome</h1>
         </div>
     </div>
     <div class="sign-up-container flex-row flex-row__center">
         <div class="flex-col w-half">
+
+            <div class="form-label flex-col h-full">
+                <h1>Sign Up</h1>
+            </div>
     
             <form class="w-full flex-col sign-up-form" [formGroup]="registerForm" (ngSubmit)="onRegister(registerForm)">
                 <div>

@@ -36,4 +36,11 @@
   .sign-up-input-label {
     color: $brand-primary-cetacean-blue;
   }
+
+  .form-label {
+    width: 100%;
+    color: $brand-primary-cetacean-blue;
+    align-items: start;
+    margin-bottom: 25px;
+  }
 }
