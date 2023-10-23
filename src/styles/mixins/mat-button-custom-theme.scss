@@ -1,0 +1,19 @@
+@use "@angular/material" as mat;
+@import '../variables';
+
+@mixin mat-button-custom-theme($theme) { 
+    .mat-mdc-raised-button:not(:disabled) {
+        background: $brand-primary-tertiary-linear;
+    }
+
+    .mat-mdc-raised-button:disabled {
+        background: $brand-primary-tertiary-linear;
+        color: $brand-secondary-white;
+        opacity: .5;
+    }
+
+    .mdc-button__label {
+        font-weight: 600;
+    }
+
+}

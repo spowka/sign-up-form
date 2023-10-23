@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.h-half {
+  height: 50%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &__end {
+    justify-content: flex-end;
+  }
+
+  &__center {
+    justify-content: center;
+  }
+
+  &__btw {
+    justify-content: space-between;
+  }
+
+  &.nowrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__start {
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  &__end {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__btw {
+    justify-content: space-between;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

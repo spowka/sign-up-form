@@ -1,0 +1,23 @@
+@use "@angular/material" as mat;
+@import '../variables';
+
+@mixin mat-form-field-custom-theme($theme) {
+  $primary: map-get($theme, primary);
+  $warn: map-get($theme, warn);
+
+  .mat-mdc-text-field-wrapper {
+    background: $brand-primary-input;
+  }
+  
+  .mat-mdc-input-element {
+    font-size: 14px !important;
+  }
+
+  .mat-mdc-form-field-error-wrapper {
+    position: unset;
+  }
+
+  .mat-mdc-form-field-bottom-align::before {
+    content: unset;
+  }
+}

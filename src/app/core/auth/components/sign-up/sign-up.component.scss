@@ -1,0 +1,39 @@
+@import '../../../../../styles/variables';
+
+.container-signup {
+  flex: 1 1 100%;
+
+  .content-container-logo {
+    flex: 1 1 100%;
+    max-width: 40%;
+
+    background-image: url('../../../../../assets/images/sign_up_bg2.png'), url('../../../../../assets/images/sign_up_bg.png');
+    background-size: contain, cover;
+    background-position: bottom, 40%;
+    height: 100%;
+    background-repeat: no-repeat;
+
+    .welcome-label {
+      color: $brand-secondary-white;
+      text-align: center;
+    }
+  }
+
+  .sign-up-container {
+    flex: 1 1 100%;
+    max-width: 60%;
+
+    .sign-up-form {
+      gap: 15px;
+      align-items: unset;
+    }
+  }
+
+  .error {
+    font-size: 12px;
+  }
+
+  .sign-up-input-label {
+    color: $brand-primary-cetacean-blue;
+  }
+}
